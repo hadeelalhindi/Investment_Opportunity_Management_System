@@ -48,7 +48,7 @@
 .wrapper .sidbar{
     position:absolute;
     width: 200px;
-    height: 1000px;
+    height: 1805px;
     background: #ffffff;
     box-shadow: 2px 2px 4px #000000;
     padding: 30px 0;
@@ -113,8 +113,10 @@ button{
     text-align: left;
 }
 #colspan{
-    background-color: rgb(6, 100, 87);
-    color: #ffffff;
+    background-image: linear-gradient(to right, #078f8f, #0cbaba09);
+    color: #434040;
+    text-align: right;
+    font-size: 20px;
 }
 #tableroww{
     margin-top: 20px;
@@ -143,5 +145,43 @@ button{
     border-radius: 10px;
     color: #454343;
     text-align: center;
+}
+#firstrow{
+    margin-right: 20px;
+    margin-top: 10px;
+   
+    margin-bottom: 10px;
+    text-align: right;
+    padding-right: 100px;
+}
+#Secondrow{
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding-right: 100px;
+}
+#marging{
+    margin-left: 100px;
+}
+
+/*-------------------------*/
+footer{
+    height: 80px;
+    width: 1273px;
+    margin-right: 200px;
+    margin-top: 200px;
+    background-color: red;
+    background-image: linear-gradient(to right, #30204D, #0CBABA);
+    border: #ba0c0c;
+    position:sticky;
     
 }
+#h66{
+    margin-top: 25px;
+    text-align: center;
+    color:#ffffff ;
+    font-size: 12px;
+}
+

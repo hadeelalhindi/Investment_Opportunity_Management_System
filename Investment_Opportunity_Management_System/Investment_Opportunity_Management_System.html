@@ -310,61 +310,120 @@
             <section>
                 <div id="tableroww" class=" row">
                     <h5 id="subject">بيانات العقد</h5>
-                    <div class="row">
-                        <div class="col">اسم البلدية
-                            <label for="textname"></label>
-                            <input type="text" id="textname" class="form-control" name="textname">
+                    <div id="marging">
+                        <div class="row" id="firstrow">
+                            <div class="col-lg">
+                                <label for="textname">اسم البلدية</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-3">
+                                <label for="Contract">نوع العقد (مزايدات)</label>
+                                <input type="radio" class="form-control">
+                            </div>
+                            <div class="col-lg">
+                                <label for="project"> اسم المشروع</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-lg">
+                                <label for="project"> رقم العقد</label>
+                                <input type="number" class="form-control">
+                            </div>
+
+                            <div class="w-100 d-none d-md-block"></div>
+
+                            <div class="col-lg">
+                                <label for="textname">تاريخ بداية العقد</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-3">
+                                <label for="Contract"> مدة العقد بالسنة</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="col-lg">
+                                <label for="project"> تاريخ نهاية العقد</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-lg">
+                                <label for="project"> مدة السماح بالاشهر </label>
+                                <input type="number" class="form-control">
+                            </div>
                         </div>
                     </div>
-                    <table id="infotable">
-                        <tbody>
-                            <tr id="tabletr">
-                                <td>اسم البلدية</td>
-                                <td>نوع العقد (مزايدات)</td>
-                                <td colspan="2">اسم المشروع </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="textname"></label>
-                                    <input type="text" id="textname" class="form-control" name="textname">
-                                </td>
-                                <td> <label for="Contract"></label>
-                                    <input type="radio" name="Contract" id="Contract" class="form-control">
-                                </td>
-                                <td colspan="2"><label for="project"></label>
-                                    <input type="text" id="project" class="form-control" name="project">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>تاريخ بداية العقد</td>
-                                <td>مدة العقد بالسنة</td>
-                                <td>تاريخ نهاية العقد</td>
-                                <td> مدة السماح بالاشهر</td>
-                            </tr>
-                            <tr>
-                                <td><label for="date"></label>
-                                    <input type="date" id="date" class="form-control" name="date">
-                                </td>
-                                <td> <label for="time"></label>
-                                    <input type="number" id="time" class="form-control" name="time" value="0">
-                                </td>
-                                <td><label for="end"></label>
-                                    <input type="date" id="end" class="form-control" name="end">
-                                </td>
-                                <td><label for="Allow"></label>
-                                    <input type="number" id="Allow" class="form-control" name="Allow" value="0">
-                                </td>
-                            </tr>
+                    <!--بيانات العقد-->
 
-                        </tbody>
-
-                    </table>
                     <h5 id="subject">بيانات المستثمر</h5>
+<div id="marging">
+                    <div class="row" id="firstrow">
+                        <div class="col-6 col-sm-4">
+                            <label for="Contract">رقم المستثمر</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <label for="project"> اسم المستثمر</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <label for="textname">القيمة الايجارية السنوية</label>
+                            <input type="number" class="form-control">
+                        </div>
+
+                        <div class="w-100 d-none d-md-block"></div>
+
+                        <div class="col-6 col-sm-4">
+                            <label for="Contract"> نشاط العقد الرئيسي</label>
+                            <select name="select" class="form-control" id="Main contract activity">
+                                <option value="نشاط1">نشاط1</option>
+                                <option value="نشاط2">نشاط2</option>
+                                <option value="نشاط3">نشاط3</option>
+                            </select>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <label for="project"> نشاط العقد الفرعي</label>
+                            <select name="selectt" class="form-control" id="Subcontract activity">
+                                <option value="نشاط1">نشاط1</option>
+                                <option value="نشاط2">نشاط2</option>
+                                <option value="نشاط3">نشاط3</option>
+                            </select>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <label for="project"> نوع المستثمر</label>
+                            <select name="selectt" class="form-control" id="Subcontract activity">
+                                <option value="نشاط1">فرد</option>
+                                <option value="نشاط2">شركة</option>
+                                <option value="نشاط3">مؤسسة</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                    <!--بيانات المستثمر-->
+
                     <h5 id="subject">بيانات المكانية</h5>
+                    <div id="marging">
+                        <div class="row" id="firstrow">
+                            <div class="col-6 col-md-2">
+                                <label for="Contract">رقم المستثمر</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="col-6 col-md-5">
+                                <label for="project"> اسم المستثمر</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-6 col-md-5">
+                                <label for="textname">القيمة الايجارية السنوية</label>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <!--بيانات المكانية-->
                 </div>
             </section>
         </main>
     </div>
+    <footer>
+        <div class="row" id="footer">
+           <div class="col"><h6 id="h66"> جميع الحقوق محفوظة &copy;	2022 أمانة منطقة تبوك تصميم وتطوير ادارة تقنية المعلومات</h6> </div>
+   </div>
+    </footer>
 </body>
 
 </html>
